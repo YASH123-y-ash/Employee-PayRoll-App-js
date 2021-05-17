@@ -99,6 +99,23 @@
             border-radius: 4px;
             resize: vertical;
         }
+
+        .profile-radio-content{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .profile-radio-content > label{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .profile{
+            width: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
     </style>
 </head>
 </html>
@@ -121,6 +138,31 @@
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
             </div>
+    <div class="row-content">
+        <label class="label text" for="profile">Profile image</label>
+      <div class="profile-radio-content">
+            <label>
+                <input type="radio" id="profile1" name="profile"
+                value="image\0c1a4646-beb1-4a70-baa2-77e413f5e931.jpg" required>
+                <img class="profile" id="image1" src="image\0c1a4646-beb1-4a70-baa2-77e413f5e931.jpg">
+            </label>
+            <label>
+                <input type="radio" id="profile2" name="profile"
+                value="image\859a2a65-3c3d-4efe-83bc-a7cfd6786d29.jpg" required>
+                <img class="profile" id="image2" src="image\859a2a65-3c3d-4efe-83bc-a7cfd6786d29.jpg">
+            </label>
+            <label>
+                <input type="radio" id="profile3" name="profile"
+                value="image\a2c129ef-8c12-43e1-b48f-0b734764c40e.jpg" required>
+                <img class="profile" id="image3" src="image\a2c129ef-8c12-43e1-b48f-0b734764c40e.jpg">
+            </label>
+            <label>
+                <input type="radio" id="profile4" name="profile"
+                value="image\ba84b4bd-b9c6-49b4-af5d-a8d05beda926.jpg" required>
+                <img class="profile" id="image4" src="image\ba84b4bd-b9c6-49b4-af5d-a8d05beda926.jpg" alt="">
+            </label>
+        </div>
+    </div>        
     </form>
     </div>
 </body>
